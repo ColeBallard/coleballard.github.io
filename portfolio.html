@@ -22,9 +22,17 @@
 
   <title>Portfolio</title>
 </head>
-<body>
+<body class="bg-dark text-white">
 
-  <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+  <nav class="navbar-side">
+    <div class="list-group list-group-flush">
+      <a href="index.html" class="list-group-item list-group-item-action bg-dark text-white">home</a>
+      <a href="portfolio.html" class="list-group-item list-group-item-action bg-dark text-white active" aria-current="true">portfolio</a>
+      <a href="contact.html" class="list-group-item list-group-item-action bg-dark text-white">contact</a>
+    </div>
+  </nav>
+
+  <!-- <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
       <a class="navbar-brand" href="index.html">Cole Ballard</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
@@ -33,7 +41,7 @@
       <div class="collapse navbar-collapse" id="navbarText">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+            <a class="nav-link" aria-current="page" href="">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link active" href="portfolio.html">Portfolio</a>
@@ -44,32 +52,78 @@
         </ul>
       </div>
     </div>
-  </nav>
+  </nav> -->
 
 
   <div class="container-fluid container-main">
-    <div class="row">
-      <div class="col-md-6 text-center" id="test-col">
-        <figure class="figure">
-          <a href="https://coleballard.github.io/weather-dashboard/" target="_blank">
-            <img src="images/weather-dashboard-screenshot.png" alt="app that displays current weather and a 5-day forecast of Tokyo, Japan" class="figure-img img-fluid portfolio-thumb">
-          </a>
-          <figcaption class="figure-caption text-center"><a href="https://github.com/ColeBallard/weather-dashboard" target="_blank">Weather Dashboard repo</a></figcaption>
+    <header>
+      <h1 class="page-title">portfolio</h1>
+    </header>
+
+    <div class="row g-5">
+      <div class="col-md-6 text-center">
+        <figure class="figure portfolio-figure portfolio-screenshot">
+          <img src="images/weather-dashboard-screenshot.png" alt="app that is displaying the current weather and a 5-day forecast of Tokyo, Japan" class="figure-img img-fluid portfolio-thumb">
+          <div class="portfolio-overlay">
+            <a href="https://github.com/ColeBallard/weather-dashboard" target="_blank">
+              <div class="overlay-text2"><i class="bi bi-github"></i></div>
+            </a>
+            <a href="https://coleballard.github.io/weather-dashboard/" target="_blank">
+              <div class="overlay-text"><i class="bi bi-link-45deg"></i></div>
+            </a>
+          </div>
         </figure>
       </div>
       <div class="col-md-6 text-center">
-        <figure class="figure">
-          <a href="https://coleballard.github.io/work-day-scheduler/" target="_blank">
-            <img src="images/work-day-scheduler-screenshot.png" alt="app that displays a list of times with buttons to add an event and reset schedule" class="figure-img img-fluid portfolio-thumb">
-          </a>
-          <figcaption class="figure-caption text-center"><a href="https://github.com/ColeBallard/work-day-scheduler" target="_blank">Workday Scheduler repo</a></figcaption>
+        <figure class="figure portfolio-figure portfolio-screenshot">
+          <img src="images/work-day-scheduler-screenshot.png" alt="app that is displaying a list of times, with two buttons to either add an event or reset schedule" class="figure-img img-fluid portfolio-thumb">
+          <div class="portfolio-overlay">
+            <a href="https://github.com/ColeBallard/work-day-scheduler" target="_blank">
+              <div class="overlay-text2"><i class="bi bi-github"></i></div>
+            </a>
+            <a href="https://coleballard.github.io/work-day-scheduler/" target="_blank">
+              <div class="overlay-text"><i class="bi bi-link-45deg"></i></div>
+            </a>
+          </div>
         </figure>
       </div>
     </div>
-
+    <div class="row g-5">
+      <div class="col-md-12 text-center">
+        <figure class="figure portfolio-figure portfolio-screenshot">
+          <img src="images/game-finder-screenshot.png" alt="app that displays current weather and a 5-day forecast of Tokyo, Japan" class="figure-img img-fluid portfolio-thumb">
+          <div class="portfolio-overlay">
+            <a href="https://github.com/danbushong/gameFinder" target="_blank">
+              <div class="overlay-text2"><i class="bi bi-github"></i></div>
+            </a>
+            <a href="https://danbushong.github.io/gameFinder/" target="_blank">
+              <div class="overlay-text"><i class="bi bi-link-45deg"></i></div>
+            </a>
+          </div>
+        </figure>
+      </div>
+    </div>
   </div>
 
-  <footer class="footer fixed-bottom">
+  <!-- <div class="col-md-12 text-center">
+    <figure class="figure">
+      <a href="https://danbushong.github.io/gameFinder/" target="_blank">
+        <img src="images/game-finder-screenshot.png" alt="app that displays current weather and a 5-day forecast of Tokyo, Japan" class="figure-img img-fluid portfolio-thumb">
+      </a>
+      <figcaption class="figure-caption text-center"><a href="https://github.com/danbushong/gameFinder" target="_blank">GameFinder repo</a></figcaption>
+    </figure>
+  </div> -->
+
+  <!-- <div class="col-md-6 text-center">
+    <figure class="figure">
+      <a href="https://coleballard.github.io/work-day-scheduler/" target="_blank">
+        <img src="images/work-day-scheduler-screenshot.png" alt="app that is displaying a list of times, with two buttons to either add an event or reset schedule" class="figure-img img-fluid portfolio-thumb">
+      </a>
+      <figcaption class="figure-caption text-center"><a href="https://github.com/ColeBallard/work-day-scheduler" target="_blank">Workday Scheduler repo</a></figcaption>
+    </figure>
+  </div> -->
+
+  <!-- <footer class="footer fixed-bottom">
     <ul class="nav justify-content-center bg-light">
       <li class="nav-item">
         <a class="nav-link" href="index.html">Home</a>
@@ -81,7 +135,7 @@
         <a class="nav-link" href="contact.html">Contact</a>
       </li>
     </ul>
-  </footer>
+  </footer> -->
 
   <!-- jQuery -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
