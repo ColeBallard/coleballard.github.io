@@ -25,86 +25,100 @@
     
     <title>Contact</title>
   </head>
-  <body>
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="index.html">Cole Ballard</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarText">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="portfolio.html">Portfolio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="contact.html">Contact</a>
-            </li>
-          </ul>
-        </div>
+  <body class="bg-dark text-white">
+
+    <nav class="navbar-side">
+      <div class="list-group list-group-flush">
+        <a href="index.html" class="list-group-item list-group-item-action text-white">home</a>
+        <a href="portfolio.html" class="list-group-item list-group-item-action text-white" aria-current="true">portfolio</a>
+        <a href="contact.html" class="list-group-item list-group-item-action text-white active">contact</a>
+        <a href="https://github.com/ColeBallard" class="list-group-item list-group-item-action text-white" target="_blank">
+          <i class="bi bi-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/cole-ballard/" class="list-group-item list-group-item-action text-white" target="_blank">
+          <i class="bi bi-linkedin"></i>
+        </a>
+        <a href="https://twitter.com/colebdev0" class="list-group-item list-group-item-action text-white" target="_blank">
+          <i class="bi bi-twitter"></i>
+        </a>
       </div>
     </nav>
+  
+    <nav class="navbar-top">
+      <div class="list-group list-group-flush list-group-horizontal">
+        <a href="index.html" class="list-group-item list-group-item-action text-white">home</a>
+        <a href="portfolio.html" class="list-group-item list-group-item-action text-white" aria-current="true">portfolio</a>
+        <a href="contact.html" class="list-group-item list-group-item-action text-white active">contact</a>
+      </div>
+    </nav>
+      
+    <main class="container-sm container-main">
+      <header>
+        <h1 class="page-title">contact</h1>
+      </header>
 
-    <main class="container-main">
-      <form class="container-sm mt-3" method="POST" action="mailto:cole.ballard97@gmail.com">
+      <form id="contact-form">
+        <input type="hidden" name="contact_number">
         <div class="mb-3">
-          <label for="nameInput" class="form-label">Name</label>
-          <input type="text" class="form-control" id="nameInput">
+          <label class="form-label">Name</label>
+          <input type="text" class="form-control" name="user_name">
         </div>
         <div class="mb-3">
-          <label for="emailInput" class="form-label">Email address</label>
-          <input type="email" class="form-control" id="emailInput" placeholder="name@example.com">
+          <label class="form-label">Email address</label>
+          <input type="email" class="form-control"  placeholder="name@example.com" name="user_email">
         </div>
         <div class="mb-3">
-          <label for="subjectInput" class="form-label">Subject</label>
-          <input type="text" class="form-control" id="subjectInput">
-        </div>
-        <div class="mb-3">
-          <label for="messageInput" class="form-label">Message</label>
-          <textarea class="form-control" id="messageInput" rows="5"></textarea>
+          <label class="form-label">Message</label>
+          <textarea class="form-control" rows="5" name="message"></textarea>
         </div>
         <input type="submit" class="btn btn-primary"></input>
       </form>
-
-      <div class="container-sm text-center mt-5">
-        <a href="https://github.com/ColeBallard" class="px-3" target="_blank">
-          <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
-            <path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
-          </svg>
-        </a>
-        <a href="https://www.linkedin.com/in/cole-ballard/" class="px-3" target="_blank">
-          <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
-            <path fill-rule="evenodd" d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212h-2.4s.03-6.547 0-7.225h2.4v1.023a5.54 5.54 0 0 0-.016.025h.016v-.025c.32-.493.89-1.193 2.165-1.193 1.58 0 2.764 1.033 2.764 3.252v4.143h-2.4V9.529c0-.972-.348-1.634-1.217-1.634-.664 0-1.059.447-1.233.878-.063.154-.079.37-.079.586v4.035z"/>
-          </svg>
-        </a>
-        <a href="https://twitter.com/colebdev0" class="px-3" target="_blank">
-          <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
-            <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
-          </svg>
-        </a>
+      <div class="toast hide mt-3" id="email-success" data-bs-delay="4000">
+        <div class="toast-body list-group-item-success text-center">
+          Email sent.
+        </div>
+      </div>
+      <div class="toast hide mt-3" id="email-fail" data-bs-delay="8000">
+        <div class="toast-body list-group-item-danger text-center">
+          Something went wrong, email couldn't be sent. Send me a DM on <a href="https://twitter.com/colebdev0" target="_blank"><i class="bi bi-twitter"></i></a> instead.
+        </div>
+      </div>
+      <div class="container-fluid mt-5" id="contact-icons">
+        <div class="row">
+          <div class="col text-center">
+            <a href="https://github.com/ColeBallard" class="text-white" target="_blank">
+              <i class="bi bi-github" style="font-size: 2rem"></i>
+            </a>
+          </div>
+          <div class="col text-center">
+            <a href="https://www.linkedin.com/in/cole-ballard/" class="text-white" target="_blank">
+              <i class="bi bi-linkedin" style="font-size: 2rem"></i>
+            </a>
+          </div>
+          <div class="col text-center">
+            <a href="https://twitter.com/colebdev0" class="text-white" target="_blank">
+              <i class="bi bi-twitter" style="font-size: 2rem"></i>
+            </a>
+          </div>
+        </div>
+        
+        
         
       </div>
+      
     </main>
 
-    <footer class="footer fixed-bottom">
-      <ul class="nav justify-content-center bg-light">
-        <li class="nav-item">
-          <a class="nav-link" href="index.html">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="portfolio.html">Portfolio</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="contact.html">Contact</a>
-        </li>
-      </ul>
-    </footer>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+
+    <!-- EmailJS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
 
     <!-- Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
 
   </body>
 </html>
