@@ -14,7 +14,7 @@ body {
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
   top: 0;
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: 200;
 }
 
@@ -26,11 +26,16 @@ body {
 .navbar-top .list-group-item {
   border: none;
   transition: .5s ease;
+  background-color: transparent;
+}
+
+.navbar-top .list-group-item.active {
+  opacity: 0.5;
 }
 
 .navbar-top .list-group-item:hover {
   opacity: 0.5;
-  font-size: 2rem;
+  text-indent: 1rem;
 }
 
 .navbar-side {
@@ -39,7 +44,7 @@ body {
   width: 128px;
   left: 0;
   top: 30%;
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: 200;
 }
 
@@ -51,11 +56,16 @@ body {
 .navbar-side .list-group-item {
   border: none;
   transition: .5s ease;
+  background-color: transparent;
+}
+
+.navbar-side .list-group-item.active {
+  opacity: 0.5;
 }
 
 .navbar-side .list-group-item:hover {
   opacity: 0.5;
-  font-size: 2rem;
+  text-indent: 1rem;
 }
 
 .page-title {
@@ -68,10 +78,6 @@ body {
 }
 
 .portfolio-figure {
- 
-}
-
-.portfolio-screenshot {
   position: relative;
 }
 
@@ -99,8 +105,7 @@ body {
   opacity: 0.5;
 }
 
-.overlay-text {
-  white-space: nowrap;
+.portfolio-overlay .bi-link-45deg {
   color: white;
   position: absolute;
   overflow: hidden;
@@ -108,8 +113,7 @@ body {
   right: 8px;
 }
 
-.overlay-text2 {
-  white-space: nowrap;
+.portfolio-overlay .bi-github {
   color: white;
   position: absolute;
   overflow: hidden;
@@ -117,26 +121,13 @@ body {
   left: 8px;
 }
 
-figcaption a {
-  color: white;
-  text-decoration: none;
-}
-
-figcaption a:hover {
-  color: white;
-  opacity: 0.5;
-}
-
-.text-small {
+.figure-caption {
   font-size: 0.5em;
-}
-
-.text-italic {
   font-style: italic;
 }
 
 #about-me-pic {
-  border: 1px solid black;
+  box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   float: right;
   width: 40%;
   margin-left: 8px;
@@ -146,6 +137,10 @@ figcaption a:hover {
 .toast {
   max-width: 300px;
   margin: 0 auto;
+}
+
+#contact-icons {
+  display: none;
 }
 
 @media only screen and (max-width: 768px) {
@@ -162,8 +157,12 @@ figcaption a:hover {
     width: 60%;
   }
 
-  .page-title {
-    display: none;
+  #container-home {
+    margin-top: 0px;
+  }
+
+  #contact-icons {
+    display: block;
   }
 }
 
@@ -179,15 +178,31 @@ figcaption a:hover {
 }
 
 @media only screen and (max-width: 450px) {
+  .navbar-top {
+    font-size: 1.25rem;
+  }
+
   .container-main {
     margin: 72px 10% 0px 10%;
     width: 80%;
+  }
+
+  .page-title {
+    font-size: 3rem;
   }
 }
 
 @media only screen and (max-width: 300px) {
   .navbar-top {
-    font-size: 1.25rem;
+    font-size: 1.0rem;
+  }
+
+  .container-main {
+    margin-top: 48px;
+  }
+
+  .page-title {
+    font-size: 2rem;
   }
 
   #about-me-pic {

@@ -2,7 +2,7 @@ window.onload = function() {
   (function(){
     emailjs.init("user_VtPgqee8uGX3GvUg4hZYV");
   })();
-  $('#email-fail').toast('show');
+
   document.getElementById('contact-form').addEventListener('submit', function(event) {
     event.preventDefault();
 
@@ -11,11 +11,9 @@ window.onload = function() {
 
     emailjs.sendForm('service_kx5gu27', 'template_9w73q28', this).then(function() {
         $('#email-success').toast('show');
-        console.log('SUCCESS!');
-
+        
       }, function(error) {
         $('#email-fail').toast('show');
-        console.log('FAILED...', error);
       });
   });
 }
