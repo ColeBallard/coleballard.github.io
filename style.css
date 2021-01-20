@@ -150,6 +150,10 @@ body {
   display: none;
 }
 
+#contact-icons .row .col a:hover {
+  opacity: 0.5;
+}
+
 @media only screen and (max-width: 1000px) {
   .portfolio-overlay .bi-link-45deg {
     font-size: 1.5rem;
