@@ -29,6 +29,11 @@ body {
   background-color: transparent;
 }
 
+#body-home .navbar-top .list-group-item {
+  color: #212529 !important;
+  font-weight: 400;
+}
+
 .navbar-top .list-group-item.active {
   opacity: 0.5;
 }
