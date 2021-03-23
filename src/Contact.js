@@ -12,17 +12,17 @@ function Contact() {
         <div class="container-fluid mt-5" id="contact-icons">
           <div class="row">
             <div class="col text-center">
-              <a href="https://github.com/ColeBallard" class="text-white" target="_blank">
+              <a href="https://github.com/ColeBallard" class="text-white" target="_blank" rel="noreferrer">
                 <Github class="bi bi-github" style={{ fontSize: "2rem" }}></Github>
               </a>
             </div>
             <div class="col text-center">
-              <a href="https://www.linkedin.com/in/cole-ballard/" class="text-white" target="_blank">
+              <a href="https://www.linkedin.com/in/cole-ballard/" class="text-white" target="_blank" rel="noreferrer">
                 <Linkedin class="bi bi-linkedin" style={{ fontSize: "2rem" }}></Linkedin>
               </a>
             </div>
             <div class="col text-center">
-              <a href="https://twitter.com/colebdev0" class="text-white" target="_blank">
+              <a href="https://twitter.com/colebdev0" class="text-white" target="_blank" rel="noreferrer">
                 <Twitter class="bi bi-twitter" style={{ fontSize: "2rem" }}></Twitter>
               </a>
             </div>
