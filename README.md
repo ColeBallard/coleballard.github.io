@@ -1,3 +1,3 @@
-# [LinkedIn](https://www.linkedin.com/in/cole-ballard/)
+## [https://www.linkedin.com/in/cole-ballard/](https://www.linkedin.com/in/cole-ballard/)
 
-# [Email](colebdev0@gmail.com)
+## [colebdev0@gmail.com](mailto:colebdev0@gmail.com)
